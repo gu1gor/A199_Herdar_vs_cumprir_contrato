@@ -2,7 +2,7 @@ package entities;
 
 import model.enums.Color;
 
-public class Circle extends Shape {
+public class Circle extends AbstractShape {
     
     private double radius;
 
@@ -23,7 +23,7 @@ public class Circle extends Shape {
     
     
     @Override
-    public Double area() {
+    public double area() {
         return Math.PI * radius * radius;
     }
     

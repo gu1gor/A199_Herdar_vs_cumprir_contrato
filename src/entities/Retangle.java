@@ -2,7 +2,7 @@ package entities;
 
 import model.enums.Color;
 
-public class Retangle extends Shape {
+public class Retangle extends AbstractShape {
     
     private double widht;
     private double height;
@@ -33,8 +33,7 @@ public class Retangle extends Shape {
     
     
 
-    @Override
-    public Double area() {
+    public double area() {
         return widht * height;
     }
     
